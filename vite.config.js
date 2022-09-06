@@ -3,6 +3,6 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:"GDSC-NBNSSOE.GITHUB.IO/",
+  base:"/",
   plugins: [svelte()]
 })
