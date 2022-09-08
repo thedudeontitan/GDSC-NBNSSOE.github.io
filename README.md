@@ -1,4 +1,4 @@
-# Svelte + Vite
+# How to set up our Website
 
 This template should help get you started developing with Svelte in Vite.
 
