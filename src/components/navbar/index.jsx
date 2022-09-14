@@ -12,11 +12,9 @@ export default function Navbar(){
 
   const handleWindowNavSize = ()=>{
     if (isMobile===false && window.innerWidth <= 966) {
-      console.log(isMobile);
       setIsMobile(true);
     }
     else if (isMobile===true && window.innerWidth > 966){
-      console.log(isMobile);
       setIsMobile(false);
     }
   }
