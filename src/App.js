@@ -8,14 +8,13 @@ import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Binder from './pages/binder';
 
-const base = "gdsc-frontend";
 export const endpoints = {
-  initial:`${base}/`,
-  home:`${base}/home/`,
-  events:`${base}/events/`,
-  projects:`${base}/projects/`,
-  team:`${base}/team/`,
-  contact:`${base}/contact/`,
+  initial:`/`,
+  home:`home/`,
+  events:`events/`,
+  projects:`projects/`,
+  team:`team/`,
+  contact:`contact/`,
 }
 
 function App() {
