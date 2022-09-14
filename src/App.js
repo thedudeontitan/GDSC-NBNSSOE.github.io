@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
 import Initial from './pages/initial';
 import Home from './pages/home';
 import Events from "./pages/events";
@@ -20,18 +21,18 @@ export const endpoints = {
 function App() {
   return (
         <Routes>
+                <Route exact path={endpoints.initial} element={<Initial/>}/>
+           
+                <Route path={endpoints.home} element={<Home/>}/>
 
-            <Route path={endpoints.initial} element={<Initial/>}/>
-            
-            <Route path={endpoints.home} element={<Home/>}/>
+                <Route path={endpoints.events} element={<Events/>}/>
 
-            <Route path={endpoints.events} element={<Events/>}/>
+                <Route path={endpoints.projects} element={<Projects/>}/>
 
-            <Route path={endpoints.projects} element={<Projects/>}/>
+                <Route path={endpoints.team} element={<Team/>}/>
 
-            <Route path={endpoints.team} element={<Team/>}/>
-
-            <Route path={endpoints.contact} element={<Contact/>}/>
+                <Route path={endpoints.contact} element={<Contact/>}/>
+                
         </Routes>
   );
 }

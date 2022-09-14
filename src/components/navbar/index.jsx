@@ -1,8 +1,10 @@
 import { React,useState,useEffect} from "react";
+import { Link } from "react-router-dom";
 import styles from "./index.module.css";
 import NBNSSOE from "../../assets/NBNSSOE.svg";
 import DesktopNav from "./navs/desktop";
 import MobileNav from "./navs/mobile";
+import { endpoints } from "../../App";
 
 export default function Navbar(){
   
@@ -21,6 +23,7 @@ export default function Navbar(){
 
   useEffect(()=>{
     window.addEventListener('resize', handleWindowNavSize);
+    handleWindowNavSize();
   })
 
 
@@ -31,7 +34,7 @@ export default function Navbar(){
       
        
       <div className={styles.right_side}>
-      <img src={NBNSSOE} alt="logo" />
+         <Link to={`/${endpoints.initial}`}><img src={NBNSSOE} alt="logo" /></Link>
       </div>
       <div className={styles.left_side}>
         {

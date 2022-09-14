@@ -87,3 +87,14 @@
         margin-left: 20px;
     }
 }
+
+@media only screen and (max-width:452px) {
+    .right_side{
+        width: 60%;
+    }
+    .left_side ul{
+        justify-content: flex-start !important;
+        margin: 0;
+    }
+}
+
